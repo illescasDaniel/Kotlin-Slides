@@ -1,0 +1,56 @@
+\documentclass{beamer}
+
+\usetheme{metropolis}
+\usepackage[utf8]{inputenc}
+\usepackage[normalem]{ulem} % Tachar texto (con \sout)
+\usepackage[spanish]{babel}
+\usepackage{hyperref}
+\usepackage{graphicx}
+
+\input{config/fonts}
+\input{config/colors}
+\input{config/listingsConfig}
+\input{config/commands}
+
+\title{Kotlin}
+\subtitle{\small{
+	\url{bit.ly/KotlinCalculoGithub}} \newline 
+	\url{https://play.kotlinlang.org/}
+}
+\author{Daniel Illescas Romero}
+\date{\today}
+\institute{Calculo S.A}
+
+\setcounter{tocdepth}{3} % 2 para mostrar subsecciones
+\setcounter{secnumdepth}{1}
+\setbeamerfont{subsection in toc}{size=\scriptsize}
+\setbeamerfont{subsubsection in toc}{size=\scriptsize}
+
+\begin{document}
+
+	\input{sections/0_Index}
+
+	\input{sections/1_Introduccion}
+
+	\input{sections/2_Sintaxis}				 
+	
+	\input{sections/3_Interoperabilidad}
+	
+	\input{sections/4_Avanzado}
+		
+	\newSectionWithoutIndex{Bibliografía}	
+		\tiny
+		\begin{frame}[allowframebreaks]{Bibliografía}
+			\bibliographystyle{plainurl}
+			\bibliography{References}
+			\newpage
+			\large{\textbf{Recomendaciones:}}
+			\begin{itemize}
+				\urlItem{https://kotlinlang.org}
+				\urlItem{http://devdocs.io}
+				\urlItem{https://zealdocs.org}
+				\urlItem{https://kotlinlang.org/community/}
+				\urlItem{https://github.com/illescasDaniel/Kotlin-Slides}
+			\end{itemize}
+		\end{frame}
+\end{document}

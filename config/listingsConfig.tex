@@ -1,0 +1,49 @@
+\usepackage{listings}
+
+\lstdefinelanguage{Kotlin}{
+  keywords={package, as, as?, typealias, this, super, val, var, fun, for, null, true, false, is, in, throw, return, break, continue, object, if, try, else, while, do, when, class, interface, enum, object, companion, override, public, private, get, set, import, abstract, vararg, expect, actual, suspend, data, internal, dynamic, final, by}, % where
+  keywordstyle=\color{customBlue}\bfseries,
+  ndkeywords={@Deprecated, @JvmName, @JvmStatic, @JvmOverloads, @JvmField, @JvmSynthetic, Iterable, Int, Long, Integer, Short, Byte, Float, Double, String, Runnable, Array, List, Person, People},
+  ndkeywordstyle=\color{customOrange}\bfseries,
+  emph={println, return@, forEach, map, mapNotNull, first, filter, reduce, firstOrNull, lazy, delegate, paragraph, list, arrayListOf, hyperLink, listFrom, listItem},
+  emphstyle={\color{customOrangeRed}},
+  identifierstyle=\color{black},
+  sensitive=true,
+  commentstyle=\color{gray}\ttfamily,
+  comment=[l]{//},
+  morecomment=[s]{/*}{*/},
+  stringstyle=\color{dkgreen}\ttfamily,
+  morestring=[b]",
+  morestring=[s]{"""*}{*"""},
+  otherkeywords={1, 2, 3, 4, 5, 6, 7, 8, 9, 0}
+}
+
+\lstset{frame=tb,
+  language=Kotlin,
+  aboveskip=5mm,
+  belowskip=5mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\scriptsize\ttfamily},
+  numbers=left, 
+  numberstyle=\tiny, 
+  stepnumber=1, 
+  numbersep=8pt,
+  numberstyle=\tiny\color{gray},
+  %keywordstyle=\color{customBlue},
+  %commentstyle=\color{dkgreen},
+  %stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=4,
+  gobble=18
+}
+
+\lstset{literate=
+    {->}{{{\texttt{-> }}}}1
+    {<-}{{{\texttt{ <- }}}}1    
+    {<->}{{{\texttt{ <-> }}}}1
+    {<!--}{{{\texttt{<!-- }}}}1
+    {-->}{{{\texttt{ -->}}}}1  
+    {=>}{{{\texttt{=> }}}}1    
+}

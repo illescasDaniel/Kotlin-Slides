@@ -1,0 +1,45 @@
+\newcommand{\normalSizeItem}[1] {
+  \normalsize{\item #1}
+}
+
+\newcommand{\newFrameWithoutIndex}[1]{
+	\begin{frame}
+		#1
+		\thispagestyle{empty}
+	\end{frame}
+}
+
+\newcommand{\newSectionWithoutIndex}[1]{
+	\newFrameWithoutIndex{\section{#1}}
+}
+
+\newcommand{\urlItem}[1]{
+	\footnotesize{\item {\url {#1}}}
+}
+
+\newcommand{\tinyUrlItem}[1]{
+	\tiny{\item {\url {#1}}}
+}
+  
+\newcommand{\smallCite}[1]{
+	\begin{small}
+		\cite{#1}	
+	\end{small}
+}
+
+\newcommand{\inlineCode}[1]{
+	\small{\ttfamily{#1}}
+}
+
+\newcommand{\runCodeButton}[1]{
+	\vspace{-1.05cm}
+	\hfill
+	\href{#1} {
+		\includegraphics[width=0.45cm]{resources/PlayButton.pdf}
+	}
+}
+
+\newcommand{\runCodeButtonHere}[1]{
+	\vspace{-0.2cm}
+	\runCodeButton{#1}
+}

@@ -1,0 +1,122 @@
+\newSectionWithoutIndex{Sintaxis y ejemplos}
+	\begin{frame}[fragile]{Hello World}	
+		\begin{itemize}
+			\normalSizeItem {Hello world!}
+			\lstinputlisting{../listings/sintaxis/HelloWorld.kt}
+			\runCodeButton{https://pl.kotl.in/HyteyD7aQ}
+			\smallCite{KotlinReference}
+		\end{itemize}
+	\end{frame}
+	
+	\subsection{Variables y constantes}
+				
+		\begin{frame}[fragile]{Variables y constantes}	
+			\begin{itemize}
+				
+				\normalSizeItem{ 
+					\textbf{var} para variables, \textbf{val} para constantes 
+				}
+				
+				\normalSizeItem {Inferencia de tipo}
+				\lstinputlisting{../listings/sintaxis/variables/TypeInference.kt}
+				\runCodeButton{https://pl.kotl.in/rkpQFDXpX}
+				
+				\normalSizeItem {Especificar el tipo}
+				\lstinputlisting{../listings/sintaxis/variables/Type.kt}
+				\runCodeButton{https://pl.kotl.in/B1ztFwmp7}
+			\end{itemize}
+		\end{frame}
+		
+		\begin{frame}[fragile]{Variables y constantes}	
+			\lstinputlisting{../listings/sintaxis/variables/Variables.kt}
+			\runCodeButtonHere{https://pl.kotl.in/Hyr0tP7TX}
+		\end{frame}
+		
+		\begin{frame}[fragile]{Variables y constantes}	
+			\begin{itemize}
+				\normalSizeItem { Instanciar clases }
+				\lstinputlisting{../listings/sintaxis/variables/Objects.kt}
+				\runCodeButton{https://pl.kotl.in/ryJj9P76Q}
+			\end{itemize}
+		\end{frame}
+	
+	\subsection{Funciones} %
+		 
+		\begin{frame}[fragile]{Funciones}	
+			
+			\begin{itemize}
+				\normalSizeItem {Declaración habitual}
+				\lstinputlisting{../listings/sintaxis/functions/Functions_factorial.kt}
+				\runCodeButton{https://pl.kotl.in/ry9C9vQpQ}
+				
+				\normalSizeItem {Declaración acortada}
+				\lstinputlisting{../listings/sintaxis/functions/Functions_factorial_2.kt}
+				\runCodeButton{https://pl.kotl.in/SkWNoPmTX}
+			\end{itemize}
+		\end{frame}
+	
+	\subsection{Clases} %
+		 
+		\begin{frame}[fragile]{Clases}	
+			Declaración de clase con:
+			\begin{itemize}
+				\normalSizeItem { Constructor }				
+				\normalSizeItem { Propiedades }				
+				\normalSizeItem { \inlineCode{toString()} }
+				\normalSizeItem { \inlineCode{equals(), hashCode()} }
+				\normalSizeItem { \inlineCode{copy()}, etc }				
+			\end{itemize}
+			\lstinputlisting{../listings/sintaxis/classes/Class.kt}
+			\runCodeButtonHere{https://pl.kotl.in/r1dOiPm67}
+		\end{frame}
+		
+		\begin{frame}[fragile]{Clases - Java}	
+			\lstinputlisting[
+				language=Java, 
+				basicstyle={\tiny\ttfamily},
+				stepnumber=2]
+				{../listings/sintaxis/classes/Class_Person.java}
+		\end{frame}
+		
+		\begin{frame}[fragile]{Clases - Java}	
+			\lstinputlisting[language=Java, 
+				basicstyle={\tiny\ttfamily},
+				firstnumber=27,
+				stepnumber=2]
+				{../listings/sintaxis/classes/Class_Person_2.java}
+		\end{frame}
+		
+		\begin{frame}[fragile]{Clases - Java}	
+			\lstinputlisting[language=Java, 
+				basicstyle={\tiny\ttfamily},
+				firstnumber=52,
+				stepnumber=2]
+				{../listings/sintaxis/classes/Class_Person_3.java}
+		\end{frame}
+		
+		\begin{frame}[fragile]{Clases - Java}	
+			\lstinputlisting[language=Java, 
+				basicstyle={\tiny\ttfamily},
+				firstnumber=70,
+				stepnumber=2]
+				{../listings/sintaxis/classes/Class_Person_4.java}
+		\end{frame}
+		
+		\subsubsection{Polimorfismo} %
+		
+			\begin{frame}[fragile]{Clases - Polimorfismo}	
+				\lstinputlisting{../listings/sintaxis/classes/Polymorphism.kt}
+				\runCodeButtonHere{https://pl.kotl.in/HkL3iwQT7}
+			\end{frame}
+			
+			\begin{frame}[fragile]{Clases - Polimorfismo}	
+				\lstinputlisting{../listings/sintaxis/classes/Polymorphism_1.kt}
+				\runCodeButtonHere{https://pl.kotl.in/HkALhDQT7}
+			\end{frame}
+			
+	\subsection{For, Map, Range, List, etc} %
+	
+		\begin{frame}[fragile]{For, Map, Range, List, etc}	
+			\lstinputlisting{../listings/sintaxis/For-Map-Range-List.kt}
+			\runCodeButtonHere{https://pl.kotl.in/SkYnhvXaQ}
+		\end{frame}
