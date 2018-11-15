@@ -10,5 +10,6 @@ for (i in 0 until 100) { /* ... */ }
 for (i in 0..100) { /* ... */ }
 for (i in 1..15 step 2) { /* ... */ }
 for (i in 10 downTo 0) { /* ... */ }
-
+//
 val (name, age) = Person(name = "Daniel", age = 22)
+Random.nextInt(0, 10) // kotlin.random
