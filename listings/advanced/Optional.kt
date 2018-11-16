@@ -8,5 +8,5 @@ val idPerson = mapOf(0 to daniel, 10 to john)
 println(idPerson[0]?.name ?: "unknown") // Elvis operator
 	
 // optional value
-var name: Person? = idPerson[0]
-name = null // oK
+var maybeDaniel: Person? = idPerson[0]
+maybeDaniel = null // oK
